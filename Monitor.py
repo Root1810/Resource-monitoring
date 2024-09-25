@@ -16,7 +16,7 @@ def record_spike_time(cpu_usage, memory_usage, disk_usage, top_cpu_processes, to
     spike_time = datetime.now()
     with open(log_file, "a") as log:
         log.write(f"Spike detected at {spike_time}\n")
-        log.write(f"CPU Usage: {max(cpu_usage)}%\n")
+        log.write(f"CPU USage: {max(cpu_usage)}%\n")
         log.write(f"Memory Usage: {memory_usage}%\n")
         log.write(f"Disk Usage: {disk_usage}%\n")
         log.write("Top CPU Processes:\n")
